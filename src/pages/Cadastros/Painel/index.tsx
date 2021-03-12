@@ -26,7 +26,7 @@ const DashBoard: React.FC = () => {
         {
             href: "/formapagamento",
             src: imgFormaPagamento,
-            altimg: "PDV",
+            altimg: "Forma Pagamento",
             p: "Formas de Pagamentos"
         },
         {

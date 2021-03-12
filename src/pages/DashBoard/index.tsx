@@ -30,65 +30,30 @@ const DashBoard: React.FC = () => {
             p: "Fazer Vendas"
         },
         {
-            href: "/cadastro",
+            href: "/clientes",
             src: imgCliente,
             altimg: "Clientes",
             p: "Clientes Cadastrados"
         },
         {
-            href: "/cadastro",
+            href: "/produtos",
             src: imgProduto,
             altimg: "Produtos",
             p: "Produtos Cadastrados"
         },
         {
-            href: "/cadastro",
+            href: "/estoque",
             src: imgEstoque,
             altimg: "Estoque",
             p: "Gerencia de Estoque"
         },
         {
-            href: "/cadastro",
+            href: "/relatorio",
             src: imgRelatorio,
             altimg: "relatorio",
             p: "Diversos Relatórios"
         },
-        {
-            href: "/cadastro",
-            src: imgCadastro,
-            altimg: "Cadastros",
-            p: "Telas de Cadastros"
-        },
-        {
-            href: "/PDV",
-            src: imgCarrinho,
-            altimg: "PDV",
-            p: "Fazer Vendas"
-        },
-        {
-            href: "/cadastro",
-            src: imgCliente,
-            altimg: "Clientes",
-            p: "Clientes Cadastrados"
-        },
-        {
-            href: "/cadastro",
-            src: imgProduto,
-            altimg: "Produtos",
-            p: "Produtos Cadastrados"
-        },
-        {
-            href: "/cadastro",
-            src: imgEstoque,
-            altimg: "Estoque",
-            p: "Gerencia de Estoque"
-        },
-        {
-            href: "/cadastro",
-            src: imgRelatorio,
-            altimg: "relatorio",
-            p: "Diversos Relatórios"
-        },
+      
 
 
     ]

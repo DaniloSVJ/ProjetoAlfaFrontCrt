@@ -36,35 +36,35 @@ const SignIn: React.FC = () => {
     async (data: SignInFormData) => {
       try {
         formRef.current?.setErrors({});
-        console.log("parte 1")
+       // console.log("parte 1")
         const schema = Yup.object().shape({
           email: Yup.string()
             .required('E-mail obrigatório')
             .email('Digite um e-mail válido'),
           password: Yup.string().required('Senha obrigatória'),
         });
-        console.log("parte 2")
+       // console.log("parte 2")
         await schema.validate(data, {
           abortEarly: false,
         });
-        console.log("parte 3")
+       // console.log("parte 3")
        
         signIn({
           email: data.email,
           password: data.password
         });
-        console.log("parte 4")
+      //  console.log("parte 4")
         history.push('/dashboard');
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
-          console.log("parte 5")
+        //  console.log("parte 5")
           const errors = getValidationErrors(err);
 
           formRef.current?.setErrors(errors);
           
           return;
         }
-        console.log(err)
+      //  console.log(err)
         addToast({
           
           type: 'error',
