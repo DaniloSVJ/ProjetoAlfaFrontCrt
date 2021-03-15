@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter  as Router } from 'react-router-dom';
 import Routes from './routes/index';
 import AppProvider from './hooks';
 
