@@ -14,7 +14,7 @@ import enfeite from '../../image/melhores-tecnologias.svg';
 import logomarca from '../../image/logomarca.png';
 import { Link } from 'react-router-dom';
 
-const DashBoard: React.FC = () => {
+const Painel: React.FC = () => {
 
     const cartoes = [
         {
@@ -36,7 +36,7 @@ const DashBoard: React.FC = () => {
             p: "Clientes"
         },
         {
-            href: "/cadastro",
+            href: "/cadastroprodutos",
             src: imgProduto,
             altimg: "Produtos",
             p: "Produtos"
@@ -89,5 +89,5 @@ const DashBoard: React.FC = () => {
         </Body>
     )
 }
-export default DashBoard
+export default Painel
 

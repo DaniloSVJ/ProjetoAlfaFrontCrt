@@ -5,7 +5,7 @@ import signInBackgroundImg from '../../image/sign-in-background.png';
 
 export const Container = styled.div`
   height: 100vh;
-
+  height:100%;
   display: flex;
   align-items: stretch;
 `;
@@ -17,7 +17,14 @@ export const Content = styled.div`
   justify-content: center;
   background-color: rgb(0,0,36);
   width: 100%;
+  height:100%;
   max-width: 700px;
+
+  @media (max-width: 727px) {
+    width: 100%;
+    
+  }
+
 `;
 
 const appearFromLeft = keyframes`
@@ -32,11 +39,18 @@ const appearFromLeft = keyframes`
 `;
 
 export const AnimationContainer = styled.div`
+img{
+      width: auto;
+      height:auto;
+      
+      
+    }
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  width: 100%;
+  height:100%;
   animation: ${appearFromLeft} 1s;
 
   form {
@@ -44,7 +58,8 @@ export const AnimationContainer = styled.div`
     margin: 80px 0;
     width: 340px;
     text-align: center;
-
+   
+    height:100%;
     h1 {
       margin-bottom: 24px;
       color: #fff;
@@ -60,6 +75,42 @@ export const AnimationContainer = styled.div`
       &:hover {
         color: ${shade(0.2, '#f4ede8')};
       }
+    }
+    
+  }
+  @media (max-width: 727px) {
+    flex:1;
+    form{
+      margin: 0;
+    }
+    input{
+      flex:1;
+    }
+    img{
+      width: 65%;
+      height:65%;
+      
+    }
+
+    
+  }
+  @media (max-width: 485px) {
+    flex:1;
+    form{
+      margin: 0;
+    }
+    form{
+      width: 65%;
+    }
+    
+
+    
+  }
+  @media (max-width: 361px) {
+    
+      width: 70%;
+      svg {
+      margin-right: 0px;
     }
   }
 
@@ -97,5 +148,17 @@ export const Background = styled.div`
   background:   url(${signInBackgroundImg}) no-repeat center  ;
   
   background-size: cover;
- 
+  @media (max-width: 727px) {
+    div{
+      display: none;
+    }
+    display: none;
+    margin:0;
+    flex:0;
+    background-size: 0px;
+    background: none;
+    html{
+      font-size: 0px;
+    }
+  }
 `;

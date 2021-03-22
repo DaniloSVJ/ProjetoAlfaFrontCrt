@@ -20,6 +20,7 @@ const Input: React.FC = ({ children }) => {
     return (
         <Container>
             <table>
+                
                 {children}
             </table>
         </Container>
